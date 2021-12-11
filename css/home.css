@@ -1,0 +1,119 @@
+@import url("base.css");
+
+#hero-content-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.hero-content-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.hero-text {
+  width: 25rem;
+}
+
+.hero-text h1 {
+  font-size: 8rem;
+}
+
+.hero-text h5 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.hero-cta {
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  width: 17.125rem;
+  height: 17.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-cta:hover {
+  box-shadow: 0 0 1px 4rem var(--dark-grey);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #hero-content-section {
+    padding-top: 0;
+    padding-bottom: 5rem;
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .hero-text {
+    width: 23rem;
+  }
+
+  .hero-text h1 {
+    font-size: 7rem;
+  }
+
+  .hero-text h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 0.8rem;
+    line-height: 2;
+  }
+
+  .hero-cta {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .hero-cta:hover {
+    box-shadow: 0 0 1px 2rem var(--dark-grey);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero-content-section {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+
+  .hero-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+}

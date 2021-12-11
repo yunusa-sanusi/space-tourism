@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/destination.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="container">
+        <header id="header">
+          <nav id="navbar">
+            <img src="./assets/shared/logo.svg" alt="Site Logo" class="logo" />
+            <div class="horizontal-bar"></div>
+
+            <div class="mobile-menu">
+              <img
+                src="./assets/shared/icon-hamburger.svg"
+                alt="mobile-menu"
+                class="hamburger"
+              />
+            </div>
+            <img
+              src="./assets/shared/icon-close.svg"
+              alt="close icon"
+              class="close-icon"
+            />
+
+            <ul id="nav-items">
+              <li class="nav-item">
+                <a href="/" class="nav-link"
+                  ><span class="link-number">00</span> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/destination.html" class="nav-link"
+                  ><span class="link-number">01</span> Destination</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./crew.html" class="nav-link"
+                  ><span class="link-number">02</span> Crew</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./technology.html" class="nav-link"
+                  ><span class="link-number">03</span> Technology</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <p class="pick-destination">
+          <span class="number">01</span> pick your destination
+        </p>
+
+        <section class="main-content-section">
+          <div class="placeholder-container"></div>
+
+          <div class="content-container">
+            <ul id="tab-items-list"></ul>
+            <div class="content"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./js/base.js"></script>
+    <script src="./js/destination.js"></script>
+  </body>
+</html>

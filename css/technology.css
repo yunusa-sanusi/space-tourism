@@ -1,0 +1,170 @@
+@import url("base.css");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/technology/background-technology-desktop.jpg");
+  background-position: center;
+  background-size: cover/cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.meet-crew {
+  text-transform: uppercase;
+  color: var(--white);
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  margin-top: 3.5rem;
+  margin-left: 10rem;
+}
+
+.number {
+  color: rgba(155, 155, 155, 0.5);
+  font-weight: 700;
+}
+
+/* Main Content */
+.main-content-section {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  margin-left: auto;
+}
+
+.content-container {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 15rem;
+}
+
+/* content number container */
+.content-number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-number {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--dark-grey-transparent);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--light-blue);
+  font-family: "Bellefair", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.content-number:hover {
+  border: 1px solid var(--light-blue);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 2.5rem;
+}
+
+.content-text-container {
+  width: 24rem;
+  height: 10rem;
+}
+
+.image-container {
+  width: 28rem;
+  height: 28rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-top: 0;
+  }
+
+  .main-content-section {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-bottom: 3rem;
+    margin-left: none;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content-number-container {
+    margin-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-number:not(:last-of-type) {
+    margin-right: 16px;
+  }
+
+  .content-text-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .meet-crew {
+    margin-left: 5%;
+    margin-bottom: 2rem;
+  }
+
+  .subheading2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-content-section {
+    padding-bottom: 8rem;
+  }
+
+  .content-text-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content-section {
+    padding-bottom: 12rem;
+  }
+
+  .content-text-container {
+    width: 90%;
+  }
+}
